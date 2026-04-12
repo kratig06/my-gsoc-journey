@@ -25,8 +25,17 @@ class Student:
         return self.average()>= 40
     
     def __str__ (self):
-        return f"{self.name} | Age: {self.age} | Avg: {self.average()}"
+        return f"{self.name} | Age: {self.age} | Avg: {self.average():.2f}"
 
+    def top_grade(self):
+      max = 0
+      if (len(self.grades)==0):
+        return "No grades yet"
+      top = self.grades:
+      for grade in self.grades:
+          if grade>top:
+            top = grade
+        return top
 
 s1 = Student("Kratika", 20)
 s2 = Student("Karan", 20) 
@@ -38,3 +47,4 @@ s1.add_grade(79)
 print(s1.average())
 print(s1.is_passing())
 print(s1)      
+print(s1.top_grade())
