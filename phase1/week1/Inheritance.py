@@ -63,16 +63,7 @@ print(r.area())
 
 c = Circle("red", 2)
 print(c)
-print(c.area())
-  
-  
-  
-  
-  
-  
-  
-  
-  
+print(c.area())  
   
   
   
