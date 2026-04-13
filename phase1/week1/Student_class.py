@@ -28,13 +28,13 @@ class Student:
         return f"{self.name} | Age: {self.age} | Avg: {self.average():.2f}"
 
     def top_grade(self):
-      max = 0
-      if (len(self.grades)==0):
-        return "No grades yet"
-      top = self.grades:
-      for grade in self.grades:
-          if grade>top:
-            top = grade
+        if len(self.grades) == 0:
+            return "No grades yet"
+        
+        top = self.grades[0]
+        for grade in self.grades:
+            if grade > top:
+                top = grade
         return top
 
 s1 = Student("Kratika", 20)
